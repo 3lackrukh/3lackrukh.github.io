@@ -1,10 +1,11 @@
+# First backup your current .gitignore just in case
+cp .gitignore .gitignore.backup
+
+# Then replace the contents
+cat > .gitignore << 'EOL'
 # Dependencies
 node_modules/
 bun.lockb
-
-# Production build
-dist/
-build/
 
 # Environment variables
 .env
@@ -58,3 +59,4 @@ storybook-static/
 **/public/workbox-*.js.map
 **/public/worker-*.js.map
 **/public/fallback-*.js.map
+EOL
