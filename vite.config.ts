@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  base: '/',
+  base: '/3lackrukh.github.io/',
   plugins: [react()],
   assetsInclude: ['**/*.glb', '**/*.gltf'],
   optimizeDeps: {
