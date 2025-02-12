@@ -21,7 +21,7 @@ const LoadingSpinner = () => (
 const App: React.FC = () => {
   return (
     <NavigationProvider>
-      <Router>
+      <Router basename={import.meta.env.BASE_URL}>
         <div className="flex flex-col min-h-screen">
           <Navigation />
           <main className="flex-grow">
