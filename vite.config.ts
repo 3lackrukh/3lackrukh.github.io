@@ -2,8 +2,9 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
+  base: '/',
   plugins: [react()],
-  assetsInclude: ['**/*.glb', '**/*.gltf'], // If you plan to use 3D models
+  assetsInclude: ['**/*.glb', '**/*.gltf'],
   optimizeDeps: {
     include: ['three']
   }
