@@ -1,0 +1,2 @@
+import{j as e}from"./react-three.js";import"./three-core.js";const l=()=>e.jsxs("div",{className:"container mx-auto px-4 py-8",children:[e.jsx("h1",{className:"text-4xl font-bold mb-8",children:"Resume"}),e.jsx("div",{className:"mb-8",children:e.jsx("a",{href:"/your-resume.pdf",download:!0,className:"bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700",children:"Download PDF Resume"})}),e.jsx("iframe",{src:"/your-resume.pdf",className:"w-full h-screen border rounded-lg",title:"Resume Preview"})]});export{l as default};
+//# sourceMappingURL=Resume.js.map
