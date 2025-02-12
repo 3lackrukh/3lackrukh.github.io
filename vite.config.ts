@@ -17,7 +17,10 @@ export default defineConfig({
         manualChunks: {
           'three-core': ['three'],
           'react-three': ['@react-three/fiber', '@react-three/drei']
-        }
+        },
+        entryFileNames: 'assets/[name].js',
+        chunkFileNames: 'assets/[name].js',
+        assetFileNames: 'assets/[name].[ext]'
       }
     }
   }
