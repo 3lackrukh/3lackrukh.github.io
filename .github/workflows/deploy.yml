@@ -25,6 +25,12 @@ jobs:
         
       - name: Build
         run: bun run build
+
+      - name: Add headers
+        run: |
+          echo '/* /index.html 200' > dist/_redirects
+          echo '/*.js application/javascript' > dist/_headers
+          echo '/*.tsx application/javascript' >> dist/_headers
         
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
