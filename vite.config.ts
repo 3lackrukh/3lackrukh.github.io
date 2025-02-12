@@ -6,6 +6,16 @@ export default defineConfig({
   plugins: [react()],
   assetsInclude: ['**/*.glb', '**/*.gltf'],
   optimizeDeps: {
-    include: ['three']
+    include: ['three', '@react-three/fiber', '@react-three/drei']
+  },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'three-core': ['three'],
+          'react-three': ['@react-three/fiber', '@react-three/drei']
+        }
+      }
+    }
   }
 })
