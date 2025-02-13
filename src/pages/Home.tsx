@@ -32,7 +32,7 @@ const Home = () => {
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="fixed left-8 xl:left-19 top-1/4 w-80 lg:w-96 z-10" // Changed absolute to fixed, added z-index
+          className="fixed left-8 xl:left-19 top-[16%] w-80 lg:w-96 z-10" // Changed absolute to fixed, added z-index
         >
           <div className="aspect-[3/4] w-full overflow-hidden rounded-2xl relative group">
             <img
