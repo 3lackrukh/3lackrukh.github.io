@@ -20,10 +20,13 @@ const Home = () => {
       {/* Banner Section */}
       <div className="relative h-screen">
         {/* Full-screen StellaOctangula background */}
-        <div className="absolute -inset-0 scale-120">
+        <div className="absolute -inset-0 -translate-y-1/3">
           <StellaOctangula />
         </div>
-       {/* Headshot that stays fixed while scrolling */}
+        
+        {/* Overlay gradient */}
+        <div className="absolute inset-0 bg-gradient-to-b from-gray-900/10 via-gray-900/40 to-gray-900/90" />
+        {/* Headshot that stays fixed while scrolling */}
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
