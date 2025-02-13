@@ -20,7 +20,7 @@ const Home = () => {
       {/* Banner Section */}
       <div className="relative h-screen">
         {/* Full-screen StellaOctangula background */}
-        <div className="absolute -inset-0 -translate-y-1/3">
+        <div className="absolute -inset-0 -translate-y-1/4">
           <StellaOctangula />
         </div>
         
