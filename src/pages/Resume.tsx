@@ -1,6 +1,6 @@
 import React from 'react';
 import StellaOctangula from '../components/TestCube';
-import resumePDF from '../assets/documents/resume.pdf';
+import resumePDF from '../assets/documents/Resume.pdf';
 
 const Resume: React.FC = () => {
   return (
