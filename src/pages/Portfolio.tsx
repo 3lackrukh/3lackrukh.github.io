@@ -1,4 +1,3 @@
-// src/pages/Portfolio.tsx
 import React from 'react';
 import StellaOctangula from '../components/TestCube';
 import MediaDisplay from '../components/MediaDisplay';
@@ -91,7 +90,7 @@ const Portfolio: React.FC = () => {
 
       {/* Main content */}
       <div className="relative z-10 min-h-screen py-16">
-        <div className="backdrop-blur-xl bg-white/10 border border-white/20 shadow-2xl
+        <div className="mt-32 backdrop-blur-xl bg-white/10 border border-white/20 shadow-2xl
                       mx-8 md:mx-16 
                       max-w-6xl 
                       rounded-3xl p-6 md:p-8
