@@ -20,12 +20,12 @@ const Home = () => {
       {/* Banner Section */}
       <div className="relative h-screen">
         {/* Full-screen StellaOctangula background */}
-        <div className="absolute inset-0">
+        <div className="absolute -inset-1/3 scale-150">
           <StellaOctangula />
         </div>
         
         {/* Overlay gradient */}
-        <div className="absolute inset-0 bg-gradient-to-b from-gray-900/30 via-gray-900/70 to-gray-900" />
+        <div className="absolute inset-1/3 bg-gradient-to-b from-gray-900/30 via-gray-900/70 to-gray-900" />
 
         {/* Headshot that stays fixed while scrolling */}
         <motion.div 
