@@ -40,7 +40,7 @@ const Footer = () => {
   );
 
   return (
-    <footer className="bg-gray-900 text-white py-6 mt-8 border-t border-white/10">
+    <footer className="relative z-50 bg-gray-900 text-white py-6 mt-8 border-t border-white/10">
       <div className="container mx-auto flex justify-center space-x-8">
         <IconLink 
           href="https://github.com/3lackrukh"
