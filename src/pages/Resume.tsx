@@ -18,8 +18,8 @@ const Resume: React.FC = () => {
         {/* Floating download button */}
         <div className="fixed top-8 right-8 z-20">
           <a 
-            href={resumePDF}
-            download
+            href={resumePDF} 
+            download 
             className="inline-flex items-center px-6 py-3 text-lg font-medium
                       bg-gradient-to-r from-blue-600 to-blue-700
                       hover:from-blue-500 hover:to-blue-600
@@ -44,15 +44,13 @@ const Resume: React.FC = () => {
           </a>
         </div>
 
-        {/* PDF Container */}
+        {/* PDF Container with less nesting and cleaner look */}
         <div className="max-w-5xl mx-auto">
-          <div className="aspect-[8.5/11] w-full backdrop-blur-sm 
-                        shadow-2xl rounded-lg overflow-hidden
-                        border border-white/10
+          <div className="aspect-[8.5/11] w-full
                         transform transition-transform duration-500 hover:scale-[1.02]">
             <iframe 
               src={resumePDF}
-              className="w-full h-full"
+              className="w-full h-full rounded-lg shadow-2xl"
               title="Resume Preview"
             />
           </div>
