@@ -27,10 +27,10 @@ const Resume = () => {
                 href={resumePDF}
                 download
                 className="inline-flex items-center px-6 py-3 text-lg font-medium
-                          bg-gradient-to-r from-blue-600 to-blue-700
-                          hover:from-blue-500 hover:to-blue-600
+                          bg-gradient-to-r from-teal-600 to-teal-700
+                          hover:from-teal-500 hover:to-teal-600
                           text-white rounded-lg transition-all duration-300
-                          shadow-lg shadow-blue-500/25"
+                          shadow-lg shadow-teal-500/25"
               >
                 Download Resume
                 <svg 
