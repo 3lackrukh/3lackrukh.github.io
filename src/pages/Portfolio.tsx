@@ -107,7 +107,7 @@ const Portfolio: React.FC = () => {
                                 transform transition-all duration-500 hover:scale-[1.02]">
                   <MediaDisplay 
                     type={project.media.type}
-                    url={project.media.url}
+                    source={project.media.source}
                     title={project.title}
                   />
                   <div className="p-6 space-y-4">
