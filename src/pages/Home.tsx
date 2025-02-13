@@ -134,7 +134,7 @@ const Home = () => {
                     <p className="text-xl leading-relaxed mb-6">
                       Want to explore how we can learn together and use AI to build a more equitable world?
                     </p>
-                    <a href="mailto:nathan.rhys@atlasschool.com" 
+                    <a href="https://www.linkedin.com/in/nathan-rhys/" 
                        className="inline-flex items-center px-6 py-3 text-lg font-medium
                                  bg-gradient-to-r from-rose-600 to-rose-700
                                  hover:from-rose-500 hover:to-rose-600
