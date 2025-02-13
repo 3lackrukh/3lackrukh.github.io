@@ -17,7 +17,7 @@ const Navigation: React.FC = () => {
             className="text-xl font-bold text-white hover:text-gray-200 
                        transition-colors duration-300"
           >
-            Your Name
+            Nathan Rhys
           </Link>
           <div className="flex gap-6">
             {navItems.map((item) => (
