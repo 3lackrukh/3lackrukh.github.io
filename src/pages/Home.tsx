@@ -17,21 +17,21 @@ const Home = () => {
 
   return (
     <div className="relative min-h-screen bg-gray-900">
-      {/* Banner Section */}
-      <div className="relative h-screen">
-        {/* Full-screen StellaOctangula background */}
-        <div className="absolute -inset-0 -translate-y-1/4">
-          <StellaOctangula />
-        </div>
-        
+      {/* Fixed background animation with overlay */}
+      <div className="fixed inset-0">
+        <StellaOctangula />
         {/* Overlay gradient */}
-        <div className="absolute inset-0 bg-gradient-to-b from-gray-900/10 via-gray-900/40 to-gray-900/90" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gray-900/25 to-gray-900/60" />
+      </div>
+    
+      {/* Banner Section */}
+      <div className="relative h-screen ">
         {/* Headshot that stays fixed while scrolling */}
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="fixed left-8 xl:left-19 top-[16%] w-80 lg:w-96 z-10" // Changed absolute to fixed, added z-index
+          className="fixed left-8 xl:left-19 top-[16%] w-80 lg:w-96 z-10"
         >
           <div className="aspect-[3/4] w-full overflow-hidden rounded-2xl relative group">
             <img
@@ -58,7 +58,7 @@ const Home = () => {
               I'm Nathan
             </h1>
             <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto">
-            A lifelong learner fascinated by human connection, bridging the worlds of human understanding and machine learning.
+              A lifelong learner fascinated by human connection, bridging the worlds of human understanding and machine learning.
             </p>
           </motion.div>
         </div>
@@ -104,44 +104,43 @@ const Home = () => {
                   </div>
 
                   <p className="text-xl leading-relaxed">
-                  This philosophy drives my continuous learning, from implementing a{' '}
-                  <a href="https://github.com/3lackrukh/object_detection" 
-                     className="text-blue-400 hover:text-blue-300 transition-colors">
-                    YOLOv3 object detection system
-                  </a>{' '}
-                  to break down complex computer vision concepts, to developing{' '}
-                  <a href="https://github.com/3lackrukh/atlas-live_codes"
-                     className="text-blue-400 hover:text-blue-300 transition-colors">
-                    educational resources
-                  </a>{' '}
-                  as a student tutor to make advanced programming accessible to others.
-                </p>
-
-                <p className="text-xl leading-relaxed">
-                  Each project, whether it's building a{' '}
-                  <a href="https://github.com/kelciatkinson/atlas-AirBnB_clone_v4"
-                     className="text-blue-400 hover:text-blue-300 transition-colors">
-                    full-stack AirBnB clone
-                  </a>{' '}
-                  with peers or implementing a{' '}
-                  <a href="https://github.com/3lackrukh/atlas-simple_shell"
-                     className="text-blue-400 hover:text-blue-300 transition-colors">
-                    custom Unix shell
-                  </a>, has taught me new ways to make technology more human-centered and inclusive.
-                </p>
-
-                <div className="pt-6">
-                  <p className="text-xl leading-relaxed mb-6">
-                    Want to explore how we can learn together and use AI to build a more equitable world?
+                    This philosophy drives my continuous learning, from implementing a{' '}
+                    <a href="https://github.com/3lackrukh/object_detection" 
+                       className="text-blue-400 hover:text-blue-300 transition-colors">
+                      YOLOv3 object detection system
+                    </a>{' '}
+                    to break down complex computer vision concepts, to developing{' '}
+                    <a href="https://github.com/3lackrukh/atlas-live_codes"
+                       className="text-blue-400 hover:text-blue-300 transition-colors">
+                      educational resources
+                    </a>{' '}
+                    as a student tutor to make advanced programming accessible to others.
                   </p>
-                  <a href="mailto:nathan.rhys@atlasschool.com" 
-                     className="inline-flex items-center px-6 py-3 text-lg font-medium
-                               bg-gradient-to-r from-blue-600 to-blue-700
-                               hover:from-blue-500 hover:to-blue-600
-                               text-white rounded-lg transition-all duration-300
-                               shadow-lg shadow-blue-500/25">
-                    Let's Connect
 
+                  <p className="text-xl leading-relaxed">
+                    Each project, whether it's building a{' '}
+                    <a href="https://github.com/kelciatkinson/atlas-AirBnB_clone_v4"
+                       className="text-blue-400 hover:text-blue-300 transition-colors">
+                      full-stack AirBnB clone
+                    </a>{' '}
+                    with peers or implementing a{' '}
+                    <a href="https://github.com/3lackrukh/atlas-simple_shell"
+                       className="text-blue-400 hover:text-blue-300 transition-colors">
+                      custom Unix shell
+                    </a>, has taught me new ways to make technology more human-centered and inclusive.
+                  </p>
+
+                  <div className="pt-6">
+                    <p className="text-xl leading-relaxed mb-6">
+                      Want to explore how we can learn together and use AI to build a more equitable world?
+                    </p>
+                    <a href="mailto:nathan.rhys@atlasschool.com" 
+                       className="inline-flex items-center px-6 py-3 text-lg font-medium
+                                 bg-gradient-to-r from-blue-600 to-blue-700
+                                 hover:from-blue-500 hover:to-blue-600
+                                 text-white rounded-lg transition-all duration-300
+                                 shadow-lg shadow-blue-500/25">
+                      Let's Connect
                       <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" 
                               d="M14 5l7 7m0 0l-7 7m7-7H3" />
