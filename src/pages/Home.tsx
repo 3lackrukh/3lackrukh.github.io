@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import StellaOctangula from '../components/TestCube';
+import headshotImage from '../assets/images/home/Headshot.jpg';
 
 const Home = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -35,7 +36,7 @@ const Home = () => {
         >
           <div className="aspect-[3/4] w-full overflow-hidden rounded-2xl relative group">
             <img
-              src="@/assets/images/home/Headshot.jpg"
+              src={headshotImage}
               alt="Nathan's profile"
               className="w-full h-full object-cover"
             />
