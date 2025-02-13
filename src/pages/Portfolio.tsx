@@ -12,7 +12,7 @@ interface Project {
   description: string;
   media: {
     type: 'image' | 'embed';
-    url: string;
+    source: string;
   };
   githubLink: string;
   demoLink?: string;
@@ -26,7 +26,7 @@ const Portfolio: React.FC = () => {
       description: "An educational resource demonstrating advanced C data structuring through live-coded examples. Uses a practical 'bento box' example to illustrate custom data types and memory management for beginner-to-intermediate programmers.",
       media: {
         type: 'embed' as const,
-        url: "https://www.canva.com/design/DAGIcLI-VOo/_fuKx6tyYMk5Z3qehs83GQ/view?embed"      },
+        source: "https://www.canva.com/design/DAGIcLI-VOo/_fuKx6tyYMk5Z3qehs83GQ/view?embed"      },
       githubLink: "https://github.com/3lackrukh/atlas-live_codes/blob/main/typedef_struct/README.md",
       technologies: ["C", "Data Structures", "Memory Management", "Computer Science"]
     },
@@ -35,7 +35,7 @@ const Portfolio: React.FC = () => {
       description: "A comprehensive introduction to Docker containerization, covering core concepts like containers vs VMs, Dockerfile syntax, and practical implementation. Features a live coding demonstration of creating and deploying a Flask API in a Docker container.",
       media: {
         type: 'embed' as const,
-        url: "https://www.canva.com/design/DAGTuc_C-88/KT6cxYbSjkNPKuZ51jjkkg/view?embed"
+        source: "https://www.canva.com/design/DAGTuc_C-88/KT6cxYbSjkNPKuZ51jjkkg/view?embed"
       },
       githubLink: "https://github.com/3lackrukh/atlas-live_codes/tree/main/docker/project_files/README.md",
       technologies: ["Docker", "Flask", "Python", "API Development", "Containerization", "DevOps"]
@@ -45,7 +45,7 @@ const Portfolio: React.FC = () => {
       description: "A full-stack web application recreating core AirBnB functionalities. Built using Python and MySQL for the backend API, with a custom command interpreter for database manipulation and HTML/CSS/JavaScript frontend.",
       media: {
         type: 'image',
-        url: airbnbcloneImage,
+        source: airbnbcloneImage,
       },
       githubLink: "https://github.com/kelciatkinson/atlas-AirBnB_clone_v4/blob/master/README.md",
       technologies: ["Python", "MySQL", "HTML", "CSS", "JavaScript", "RESTful API"]
@@ -55,7 +55,7 @@ const Portfolio: React.FC = () => {
       description: "A computer vision project implementing the YOLO algorithm, breaking down complex concepts into digestible components. Built with Python, TensorFlow, and OpenCV to showcase real-world applications of deep learning principles.",
       media: {
         type: 'image',
-        url: objectDetectionImage,
+        source: objectDetectionImage,
       },
       githubLink: "https://github.com/3lackrukh/object_detection/blob/master/README.md",
       technologies: ["Python", "TensorFlow", "OpenCV", "Computer Vision", "Machine Learning"]
@@ -65,7 +65,7 @@ const Portfolio: React.FC = () => {
       description: "A custom Unix shell implementation supporting both interactive and non-interactive modes. Features include command execution, PATH handling, built-in commands, and environment variable management. Developed in C with system calls like fork, execve, and wait.",
       media: {
         type: 'image',
-        url: shellImage,
+        source: shellImage,
       },
       githubLink: "https://github.com/3lackrukh/atlas-simple_shell",
       technologies: ["C", "Systems Programming", "Unix", "Process Management", "Shell Scripting"]
@@ -75,7 +75,7 @@ const Portfolio: React.FC = () => {
       description: "A deep learning project achieving 94.48% validation accuracy on the CIFAR-10 dataset using transfer learning techniques. Implements various optimization strategies including spatial dropout, learning rate scheduling, and data augmentation. Built with TensorFlow/Keras.",
       media: {
         type: 'image',
-        url: transferLearningImage,
+        source: transferLearningImage,
       },
       githubLink: "https://github.com/3lackrukh/atlas-machine_learning/tree/main/supervised_learning/transfer_learning",
       technologies: ["Python", "TensorFlow", "Keras", "Deep Learning", "Transfer Learning", "Computer Vision"]
