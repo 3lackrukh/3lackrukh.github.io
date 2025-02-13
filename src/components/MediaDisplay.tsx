@@ -7,12 +7,12 @@ interface MediaProps {
   title: string;
 }
 
-const MediaDisplay: React.FC<MediaProps> = ({ type, url, title }) => {
+const MediaDisplay: React.FC<MediaProps> = ({ type, source, title }) => {
   if (type === 'embed') {
     return (
       <div className="relative w-full pt-[56.25%]"> {/* 16:9 aspect ratio container */}
         <iframe
-          src={url}
+          src={source}
           className="absolute top-0 left-0 w-full h-full"
           frameBorder="0"
           allow="fullscreen"
@@ -25,7 +25,7 @@ const MediaDisplay: React.FC<MediaProps> = ({ type, url, title }) => {
   
   return (
     <img 
-      src={url} 
+      src={source} 
       alt={title} 
       className="w-full h-64 object-cover"
     />
