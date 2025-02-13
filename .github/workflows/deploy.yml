@@ -28,7 +28,9 @@ jobs:
         run: bun install
         
       - name: Build
-        run: bun run build
+        run: |
+          bun run build
+          cp .nojekyll dist/
 
       # Removed the headers section 
 
