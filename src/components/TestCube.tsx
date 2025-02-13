@@ -1,5 +1,5 @@
 import React, { Suspense, useMemo, useState, useRef, useEffect } from 'react';
-import { Canvas, useFrame, extend } from '@react-three/fiber';
+import { Canvas, useFrame, extend, useThree } from '@react-three/fiber';
 import { OrbitControls, Effects } from '@react-three/drei';
 import * as THREE from 'three';
 import { Settings, Camera } from 'lucide-react';
@@ -9,6 +9,42 @@ import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPa
 // Extend Three.js with UnrealBloomPass
 extend({ UnrealBloomPass });
 
+// New component for gradient background
+const GradientBackground: React.FC = () => {
+  const { gl } = useThree();
+  
+  // Create a gradient texture
+  const gradientTexture = useMemo(() => {
+    const canvas = document.createElement('canvas');
+    canvas.width = 256;
+    canvas.height = 1;
+    const context = canvas.getContext('2d');
+    
+    if (context) {
+      // Create gradient
+      const gradient = context.createLinearGradient(0, 0, canvas.width, 0);
+      gradient.addColorStop(0, '#000014');
+      gradient.addColorStop(1, '#111827');
+      
+      // Fill with gradient
+      context.fillStyle = gradient;
+      context.fillRect(0, 0, canvas.width, 1);
+    }
+    
+    return new THREE.CanvasTexture(canvas);
+  }, []);
+
+  useEffect(() => {
+    gl.setClearColor(new THREE.Color('#111827'), 1);
+  }, [gl]);
+
+  return (
+    <mesh position={[0, 0, -10]}>
+      <planeGeometry args={[100, 100]} />
+      <meshBasicMaterial map={gradientTexture} />
+    </mesh>
+  );
+};
 interface ShapeProps {
     color: string;
     wireframe: boolean;
@@ -140,13 +176,7 @@ const StellaOctangula: React.FC = () => {
     return (
       <div className="w-full h-96 bg-gray-900 rounded-lg relative">
         <div className="absolute top-4 right-4 z-10 flex gap-2">
-          <button
-            onClick={() => setWireframe(!wireframe)}
-            className="p-2 bg-white/10 rounded-full hover:bg-white/20"
-            title="Toggle Wireframe"
-          >
             <Settings className="w-5 h-5 text-white" />
-          </button>
           <button
             onClick={() => setAutoRotate(!autoRotate)}
             className="p-2 bg-white/10 rounded-full hover:bg-white/20"
@@ -156,10 +186,11 @@ const StellaOctangula: React.FC = () => {
           </button>
         </div>
         
-        <Canvas camera={{ position: [3, 2, 3] }}>
+        <Canvas camera={{ position: [3, 2, 3] }} gl={{ alpha: false }}>
           <Suspense fallback={null}>
+            <GradientBackground />
             <ambientLight intensity={0.5} />
-            <pointLight position={[10, 10, 10]} intensity={1.5} /> {/* Increased light intensity */}
+            <pointLight position={[10, 10, 10]} intensity={1.5} />
             {navItems.map((item, index) => {
                 const initialRotation: [number, number, number] = [
                     (Math.PI / 4) * index,
