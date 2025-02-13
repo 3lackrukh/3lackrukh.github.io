@@ -35,7 +35,7 @@ const Home = () => {
         >
           <div className="aspect-[3/4] w-full overflow-hidden rounded-2xl relative group">
             <img
-              src="./src/assets/images/home/Headshot.jpg"
+              src="/src/assets/images/home/Headshot.jpg"
               alt="Nathan's profile"
               className="w-full h-full object-cover"
             />
