@@ -96,7 +96,7 @@ const Home = () => {
                   <div className="p-6 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm">
                     <p className="text-xl leading-relaxed">
                       At <a href="https://www.atlasschool.com" 
-                           className="text-blue-400 hover:text-blue-300 transition-colors">
+                           className="text-rose-400 hover:text-rose-300 transition-colors">
                         Atlas School Tulsa
                       </a>, I'm building on my background in anthropology and non-profit leadership 
                       to imagine and develop ML architectures that make a real difference for all of us.
@@ -106,12 +106,12 @@ const Home = () => {
                   <p className="text-xl leading-relaxed">
                     This philosophy drives my continuous learning, from implementing a{' '}
                     <a href="https://github.com/3lackrukh/object_detection" 
-                       className="text-blue-400 hover:text-blue-300 transition-colors">
+                       className="text-rose-400 hover:text-rose-300 transition-colors">
                       YOLOv3 object detection system
                     </a>{' '}
                     to break down complex computer vision concepts, to developing{' '}
                     <a href="https://github.com/3lackrukh/atlas-live_codes"
-                       className="text-blue-400 hover:text-blue-300 transition-colors">
+                       className="text-rose-400 hover:text-rose-300 transition-colors">
                       educational resources
                     </a>{' '}
                     as a student tutor to make advanced programming accessible to others.
@@ -120,12 +120,12 @@ const Home = () => {
                   <p className="text-xl leading-relaxed">
                     Each project, whether it's building a{' '}
                     <a href="https://github.com/kelciatkinson/atlas-AirBnB_clone_v4"
-                       className="text-blue-400 hover:text-blue-300 transition-colors">
+                       className="text-rose-400 hover:text-rose-300 transition-colors">
                       full-stack AirBnB clone
                     </a>{' '}
                     with peers or implementing a{' '}
                     <a href="https://github.com/3lackrukh/atlas-simple_shell"
-                       className="text-blue-400 hover:text-blue-300 transition-colors">
+                       className="text-rose-400 hover:text-rose-300 transition-colors">
                       custom Unix shell
                     </a>, has taught me new ways to make technology more human-centered and inclusive.
                   </p>
@@ -136,10 +136,10 @@ const Home = () => {
                     </p>
                     <a href="mailto:nathan.rhys@atlasschool.com" 
                        className="inline-flex items-center px-6 py-3 text-lg font-medium
-                                 bg-gradient-to-r from-blue-600 to-blue-700
-                                 hover:from-blue-500 hover:to-blue-600
+                                 bg-gradient-to-r from-rose-600 to-rose-700
+                                 hover:from-rose-500 hover:to-rose-600
                                  text-white rounded-lg transition-all duration-300
-                                 shadow-lg shadow-blue-500/25">
+                                 shadow-lg shadow-rose-500/25">
                       Let's Connect
                       <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" 
