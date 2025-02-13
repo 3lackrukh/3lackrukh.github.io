@@ -3,7 +3,7 @@ import React from 'react';
 
 interface MediaProps {
   type: 'image' | 'embed';
-  url: string;
+  source: string;
   title: string;
 }
 
