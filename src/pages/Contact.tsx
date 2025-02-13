@@ -71,8 +71,8 @@ const Contact = () => {
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl 
-                           text-white placeholder-white/50 focus:border-blue-400
-                           focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50
+                           text-white placeholder-white/50 focus:border-yellow-400
+                           focus:ring-2 focus:ring-yellow-400 focus:ring-opacity-50
                            transition-all duration-300"
                   placeholder="Your name"
                   required
@@ -90,8 +90,8 @@ const Contact = () => {
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl 
-                           text-white placeholder-white/50 focus:border-blue-400
-                           focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50
+                           text-white placeholder-white/50 focus:border-yellow-400
+                           focus:ring-2 focus:ring-yellow-400 focus:ring-opacity-50
                            transition-all duration-300"
                   placeholder="your.email@example.com"
                   required
@@ -108,8 +108,8 @@ const Contact = () => {
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl 
-                           text-white placeholder-white/50 focus:border-blue-400
-                           focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50
+                           text-white placeholder-white/50 focus:border-yellow-400
+                           focus:ring-2 focus:ring-yellow-400 focus:ring-opacity-50
                            transition-all duration-300 h-32 resize-none"
                   placeholder="What's on your mind?"
                   required
@@ -121,9 +121,9 @@ const Contact = () => {
                 whileTap={{ scale: 0.98 }}
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full px-6 py-4 bg-gradient-to-r from-blue-600 to-blue-700
-                         hover:from-blue-500 hover:to-blue-600 text-white rounded-xl
-                         font-medium text-lg shadow-lg shadow-blue-500/25
+                className="w-full px-6 py-4 bg-gradient-to-r from-yellow-600 to-yellow-700
+                         hover:from-yellow-500 hover:to-yellow-600 text-white rounded-xl
+                         font-medium text-lg shadow-lg shadow-yellow-500/25
                          disabled:opacity-50 disabled:cursor-not-allowed
                          transition-all duration-300"
               >
@@ -170,7 +170,7 @@ const Contact = () => {
               Prefer email? Reach out directly at{' '}
               <a 
                 href="mailto:nathan.rhys@atlasschool.com"
-                className="text-blue-400 hover:text-blue-300 transition-colors"
+                className="text-yellow-400 hover:text-yellow-300 transition-colors"
               >
                 nathan.rhys@atlasschool.com
               </a>
