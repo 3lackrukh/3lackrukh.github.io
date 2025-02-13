@@ -157,7 +157,7 @@ const StellaOctangula: React.FC = () => {
           </button>
         </div>
         
-        <Canvas camera={{ position: [3, 2, 3] }} gl={{ alpha: false }} >
+        <Canvas camera={{ position: [3, 2, 3] }} gl={{ alpha: true }} >
           <color attach="background" args={["#111827"]} />
           <Suspense fallback={null}>
             <ambientLight intensity={0.5} />
