@@ -3,7 +3,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  base: '/3lackrukh.github.io/', // Changed to match repo name
+  base: '/',
   plugins: [react()],
   assetsInclude: ['**/*.glb', '**/*.gltf'],
   optimizeDeps: {

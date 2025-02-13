@@ -2,7 +2,10 @@
   "name": "3lackrukh.github.io",
   "module": "src/index.tsx",
   "type": "module",
+  "homepage": "https://3lackrukh.github.io/",
   "scripts": {
+    "predeploy": "bun run build",
+    "deploy": "gh-pages -d dist",
     "dev": "bunx --bun vite",
     "build": "vite build",
     "preview": "bunx --bun vite preview"
@@ -14,6 +17,7 @@
     "@types/three": "^0.173.0",
     "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "10.4.17",
+    "gh-pages": "^6.3.0",
     "postcss": "8.4.33",
     "tailwindcss": "3.4.1",
     "typescript": "^5.7.3",
