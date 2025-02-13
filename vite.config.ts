@@ -1,8 +1,9 @@
+// 3lackrukh.github.io/vite.config.ts
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  base: './',
+  base: '/3lackrukh.github.io/', // Changed to match repo name
   plugins: [react()],
   assetsInclude: ['**/*.glb', '**/*.gltf'],
   optimizeDeps: {

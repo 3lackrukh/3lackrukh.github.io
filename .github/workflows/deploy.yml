@@ -26,14 +26,17 @@ jobs:
       - name: Build
         run: bun run build
 
-      - name: Add headers
-        run: |
-          echo '/* /index.html 200' > dist/_redirects
-          echo '/*.js application/javascript' > dist/_headers
-          echo '/*.tsx application/javascript' >> dist/_headers
+      # Removed the headers section 
+
+      # Official Github Pages actions
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
         
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          path: './dist'
+          
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

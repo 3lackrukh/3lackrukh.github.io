@@ -41,7 +41,7 @@ const Portfolio: React.FC = () => {
       description: "A full-stack web application recreating core AirBnB functionalities. Built using Python and MySQL for the backend API, with a custom command interpreter for database manipulation and HTML/CSS/JavaScript frontend.",
       media: {
         type: 'image',
-        url: "../src/images/portfolio/airbnbclone.jpg",
+        url: "./src/assets/images/portfolio/airbnbclone.jpg",
       },
       githubLink: "https://github.com/kelciatkinson/atlas-AirBnB_clone_v4/blob/master/README.md",
       technologies: ["Python", "MySQL", "HTML", "CSS", "JavaScript", "RESTful API"]
@@ -51,7 +51,7 @@ const Portfolio: React.FC = () => {
       description: "A computer vision project implementing the YOLO algorithm, breaking down complex concepts into digestible components. Built with Python, TensorFlow, and OpenCV to showcase real-world applications of deep learning principles.",
       media: {
         type: 'image',
-        url: "../src/images/portfolio/ObjectDetection.jpg",
+        url: "./src/assets/images/portfolio/ObjectDetection.jpg",
       },
       githubLink: "https://github.com/3lackrukh/object_detection/blob/master/README.md",
       technologies: ["Python", "TensorFlow", "OpenCV", "Computer Vision", "Machine Learning"]
@@ -61,7 +61,7 @@ const Portfolio: React.FC = () => {
       description: "A custom Unix shell implementation supporting both interactive and non-interactive modes. Features include command execution, PATH handling, built-in commands, and environment variable management. Developed in C with system calls like fork, execve, and wait.",
       media: {
         type: 'image',
-        url: "../src/images/portfolio/Shell.jpg",
+        url: "./src/assets/images/portfolio/Shell.jpg",
       },
       githubLink: "https://github.com/3lackrukh/atlas-simple_shell",
       technologies: ["C", "Systems Programming", "Unix", "Process Management", "Shell Scripting"]
@@ -71,7 +71,7 @@ const Portfolio: React.FC = () => {
       description: "A deep learning project achieving 94.48% validation accuracy on the CIFAR-10 dataset using transfer learning techniques. Implements various optimization strategies including spatial dropout, learning rate scheduling, and data augmentation. Built with TensorFlow/Keras.",
       media: {
         type: 'image',
-        url: "../src/images/portfolio/transferlearning.jpg",
+        url: "./src/assets/images/portfolio/transferlearning.jpg",
       },
       githubLink: "https://github.com/3lackrukh/atlas-machine_learning/tree/main/supervised_learning/transfer_learning",
       technologies: ["Python", "TensorFlow", "Keras", "Deep Learning", "Transfer Learning", "Computer Vision"]
