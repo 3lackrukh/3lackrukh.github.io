@@ -107,9 +107,9 @@ const Home = () => {
                     <a href="https://github.com/3lackrukh/object_detection" className="text-rose-400 hover:text-rose-300 transition-colors">
                       YOLOv3
                     </a>{' '}
-                    to implement them from principles or creating{' '}
+                    to implement them from principles or creating accessible{' '}
                     <a href="https://github.com/3lackrukh/atlas-live_codes" className="text-rose-400 hover:text-rose-300 transition-colors">
-                      accessible programming resources
+                      programming resources
                     </a>{' '}
                     as a student tutor, collaborating with peers on an{' '}
                     <a href="https://github.com/kelciatkinson/atlas-AirBnB_clone_v4" className="text-rose-400 hover:text-rose-300 transition-colors">
@@ -117,8 +117,8 @@ const Home = () => {
                     </a>{' '}
                     or a{' '}
                     <a href="https://github.com/3lackrukh/atlas-simple_shell" className="text-rose-400 hover:text-rose-300 transition-colors">
-                      custom Unix shell
-                    </a>; our collective 'Aha!' moments are slowly carving a path toward more intuitive and inclusive technology.
+                      custom Unix shell!
+                    </a> Our collective 'Aha!' moments are slowly carving a path toward more intuitive and inclusive technology.
                   </p>
 
                   <div className="pt-6">
