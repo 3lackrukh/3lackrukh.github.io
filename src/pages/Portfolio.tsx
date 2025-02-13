@@ -90,9 +90,9 @@ const Portfolio: React.FC = () => {
       </div>
 
       {/* Main content */}
-      <div className="relative z-10 min-h-screen py-16">
+      <div className="relative z-10 min-h-screen pt-32 md:pt-48">
         <div className="backdrop-blur-xl bg-white/10 border border-white/20 shadow-2xl
-                      mx-8 md:mx-16 
+                      mx-8 md:mx-16 lg:mx-auto
                       max-w-6xl 
                       rounded-3xl p-6 md:p-8
                       transform transition-transform duration-700 ease-out">
