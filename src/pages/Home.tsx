@@ -90,50 +90,60 @@ const Home = () => {
 
             {/* Main Content */}
             <div className="flex-grow">
-              <div className="backdrop-blur-xl bg-white/10 border border-white/20 shadow-2xl rounded-3xl p-6 md:p-8">
+              <div className="backdrop-blur-xl bg-white/10 border border-white/20 shadow-2xl
+                          rounded-3xl p-6 md:p-8">
                 <div className="text-white/90 space-y-6">
                   <div className="p-6 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm">
                     <p className="text-xl leading-relaxed">
-                      AI and Machine Learning might seem like a detour from my background in Anthropology and non-profit work, but at{' '}
-                      <a href="https://www.atlasschool.com" className="text-rose-400 hover:text-rose-300 transition-colors">
+                      At <a href="https://www.atlasschool.com" 
+                           className="text-rose-400 hover:text-rose-300 transition-colors">
                         Atlas School Tulsa
-                      </a>{' '}
-                      I've felt these paths diffuse naturally into eachother - traces of each experience guiding the way to new possibilities.
+                      </a>, I'm building on my background in anthropology and non-profit leadership 
+                      to design connective, intuitive AI software.
                     </p>
                   </div>
 
                   <p className="text-xl leading-relaxed">
-                    It doesn't seem to matter whether its reverse-engineering computer vision systems like{' '}
-                    <a href="https://github.com/3lackrukh/object_detection" className="text-rose-400 hover:text-rose-300 transition-colors">
-                      YOLOv3
+                    With the spark of each 'Aha!' moment, curiosity drives the journey. From implementing computer vision from principles with the{' '}
+                    <a href="https://github.com/3lackrukh/object_detection" 
+                       className="text-rose-400 hover:text-rose-300 transition-colors">
+                      YOLOv3 object detection system
                     </a>{' '}
-                    to implement them from principles or creating accessible{' '}
-                    <a href="https://github.com/3lackrukh/atlas-live_codes" className="text-rose-400 hover:text-rose-300 transition-colors">
-                      programming resources
+                    to developing{' '}
+                    <a href="https://github.com/3lackrukh/atlas-live_codes"
+                       className="text-rose-400 hover:text-rose-300 transition-colors">
+                      educational resources
                     </a>{' '}
-                    as a student tutor, collaborating with peers on an{' '}
-                    <a href="https://github.com/kelciatkinson/atlas-AirBnB_clone_v4" className="text-rose-400 hover:text-rose-300 transition-colors">
-                      AirBnB clone
+                    as a student tutor, making advanced programming accessible is my passion.
+                  </p>
+
+                  <p className="text-xl leading-relaxed">
+                    Each project, whether it's building a{' '}
+                    <a href="https://github.com/kelciatkinson/atlas-AirBnB_clone_v4"
+                       className="text-rose-400 hover:text-rose-300 transition-colors">
+                      full-stack AirBnB clone
                     </a>{' '}
-                    or a{' '}
-                    <a href="https://github.com/3lackrukh/atlas-simple_shell" className="text-rose-400 hover:text-rose-300 transition-colors">
-                      custom Unix shell!
-                    </a> Our collective 'Aha!' moments are slowly carving a path toward more intuitive and inclusive technology.
+                    with peers or implementing a{' '}
+                    <a href="https://github.com/3lackrukh/atlas-simple_shell"
+                       className="text-rose-400 hover:text-rose-300 transition-colors">
+                      custom Unix shell
+                    </a>, has taught me new ways to make technology more human-centered and inclusive.
                   </p>
 
                   <div className="pt-6">
                     <p className="text-xl leading-relaxed mb-6">
-                      Have an idea you want to bat around or collaborate on?
+                      Interested in AI and software development?
                     </p>
                     <a href="https://www.linkedin.com/in/nathan-rhys/" 
-                        className="inline-flex items-center px-6 py-3 text-lg font-medium
-                                  bg-gradient-to-r from-rose-600 to-rose-700
-                                  hover:from-rose-500 hover:to-rose-600
-                                  text-white rounded-lg transition-all duration-300
-                                  shadow-lg shadow-rose-500/25">
-                      Let's Connect
+                       className="inline-flex items-center px-6 py-3 text-lg font-medium
+                                 bg-gradient-to-r from-rose-600 to-rose-700
+                                 hover:from-rose-500 hover:to-rose-600
+                                 text-white rounded-lg transition-all duration-300
+                                 shadow-lg shadow-rose-500/25">
+                      Let's Connect!
                       <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" 
+                              d="M14 5l7 7m0 0l-7 7m7-7H3" />
                       </svg>
                     </a>
                   </div>
