@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>3lackrukh - Portfolio</title>
+  <script>
+    // Store the current URL in sessionStorage to be retrieved after redirect
+    sessionStorage.redirect = window.location.href;
+
+    // Determine if this is a user/org page or a project page
+    var pathSegments = window.location.pathname.split('/');
+    var isProjectPage = pathSegments.length > 1 && pathSegments[1] !== '';
+    var redirectPath = isProjectPage ? '/' + pathSegments[1] + '/' : '/';
+    
+    // Redirect to the index page
+    window.location.replace(redirectPath);
+  </script>
+</head>
+<body>
+  <h1>Redirecting...</h1>
+  <p>If you are not redirected automatically, click <a href="/">here</a>.</p>
+</body>
+</html>
